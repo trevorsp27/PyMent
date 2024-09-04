@@ -3,13 +3,13 @@ from venmo_api import Client, UserApi, User
 # Get your access token. You will need to complete the 2FA process
 # Please store it somewhere safe and use it next time
 # Never commit your credentials or token to a git repository
-#access_token = Client.get_access_token(username='Trevor-Spinosa',
-#                                        password='!QuirkyCapybara51!',
-#                                        device_id="87552752-79P9-2S65-92A0-8FU10L948YY3")
+#access_token = Client.get_access_token(username='x',
+#                                        password='y',
+#                                        device_id="z")
 #print("My token:", access_token)
 
-client = Client("8e473377ba4ab17c47f640bf796931a60af6c4080153ff0d8aac9ef839db5027")
-#8e473377ba4ab17c47f640bf796931a60af6c4080153ff0d8aac9ef839db5027
+client = Client("z")
+#z
 
 
 
@@ -35,7 +35,7 @@ print(myuserid)
 #################
 
 #get other peoples user id's
-#users = client.user.search_for_users(query="Josh-Rovira")
+#users = client.user.search_for_users(query="x")
 #for user in users:
 #   print(user.id + " " + user.username)
 
@@ -51,7 +51,7 @@ while transactions:
 
 #############
 
-#client.payment.send_money(1.00, "thanks for the 🍔", "2748779925078016995")
+#client.payment.send_money(1.00, "thanks for the 🍔", "id")
 
 #userapi = UserApi(client)
 #me = User(client)
