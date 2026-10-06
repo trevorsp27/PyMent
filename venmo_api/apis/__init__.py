@@ -1,3 +1,5 @@
+import os
+
 from venmo_api import Client, UserApi, User
 
 # Get your access token. You will need to complete the 2FA process
@@ -8,7 +10,8 @@ from venmo_api import Client, UserApi, User
 #                                        device_id="z")
 #print("My token:", access_token)
 
-client = Client("REDACTED_ACCESS_TOKEN")
+# Read the token from the environment instead of hardcoding it
+client = Client(os.environ["VENMO_ACCESS_TOKEN"])
 
 
 
